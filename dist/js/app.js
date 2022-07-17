@@ -1,4 +1,5 @@
-const host_endpoint = "http://localhost:8080/api";
+const host_endpoint =
+  "https://tesla-backend-rest-server-production.up.railway.app/api";
 
 axios
   .get(`${host_endpoint}/teams`, {

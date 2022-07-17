@@ -1,5 +1,4 @@
-const host_endpoint =
-  "https://tesla-backend-rest-server-production.up.railway.app/api";
+const host_endpoint = "http://localhost:8080/api";
 
 axios
   .get(`${host_endpoint}/teams`, {
@@ -10,7 +9,7 @@ axios
     response.data.forEach(function (val) {
       // console.log(val);
       $("#teams").append(`
-        <div class="Team w-40">
+        <div class="Team">
           <img src="${
             val.avatar || "dist/image/team/def.png"
           }" class="border-8 border-white rounded-full h-auto w-36 mx-auto" />

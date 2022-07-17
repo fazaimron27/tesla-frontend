@@ -2,7 +2,9 @@ const host_endpoint =
   "https://tesla-backend-rest-server-production.up.railway.app/api";
 
 axios
-  .get(`${host_endpoint}/teams`)
+  .get(`${host_endpoint}/teams`, {
+    headers: { "Access-Control-Allow-Origin": "*" },
+  })
   .then((response) => {
     // console.log(response.data);
     response.data.forEach(function (val) {

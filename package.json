@@ -2,7 +2,8 @@
   "name": "web-company-profile_tesla",
   "description": "Final Project Pemrograman Web",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
   },
   "devDependencies": {
     "tailwindcss": "^3.1.4"
